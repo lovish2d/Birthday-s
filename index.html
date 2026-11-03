@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>A Little Surprise For You</title>
+<title>For Shanaya ❤️</title>
 
 <style>
 * {
@@ -77,7 +77,6 @@ button:hover {
 
 button:disabled {
     opacity: 0.5;
-    cursor: not-allowed;
 }
 
 .small {
@@ -99,11 +98,9 @@ button:disabled {
 
 .progress {
     margin-bottom: 25px;
-    font-size: 14px;
+    font-size: 13px;
     letter-spacing: 3px;
 }
-
-/* PAGE 1 */
 
 .big-heart {
     font-size: 85px;
@@ -115,8 +112,6 @@ button:disabled {
     0%, 100% {transform: scale(1);}
     50% {transform: scale(1.15);}
 }
-
-/* PAGE 2 QUIZ */
 
 .answer {
     display: block;
@@ -132,8 +127,6 @@ button:disabled {
     margin-top: 15px;
     font-weight: bold;
 }
-
-/* PAGE 3 GIFTS */
 
 .gift-row {
     display: flex;
@@ -188,8 +181,6 @@ button:disabled {
     filter: drop-shadow(0 0 12px white);
 }
 
-/* PAGE 4 */
-
 .gift-big {
     width: 180px;
     height: 150px;
@@ -231,8 +222,6 @@ button:disabled {
     animation: appear 1s ease;
 }
 
-/* PAGE 5 */
-
 .birthday-card {
     background: white;
     color: #e84e91;
@@ -250,6 +239,13 @@ button:disabled {
 .birthday-card p {
     font-size: 17px;
     margin: 15px auto;
+}
+
+.compliment {
+    font-size: 19px;
+    font-weight: bold;
+    line-height: 1.7;
+    margin: 20px auto;
 }
 
 .signature {
@@ -292,6 +288,7 @@ button:disabled {
 @media(max-width: 400px) {
     h1 {font-size: 30px;}
     p {font-size: 16px;}
+    .birthday-card {padding: 25px 18px;}
     .gift-choice {
         transform: scale(0.85);
         margin: -5px;
@@ -306,23 +303,27 @@ button:disabled {
 
 <section class="page active" id="page1">
 
-    <div class="progress">A LITTLE SURPRISE FOR YOU</div>
+    <div class="progress">A LITTLE SURPRISE FOR SHANAYA</div>
 
     <div class="big-heart">♥</div>
 
-    <h1>Hey You!</h1>
+    <h1>Hey Shanaya!</h1>
 
     <p>
-        I have something special planned for you.
-        But there is a little catch...
-        You have to complete a few challenges first!
+        So, someone very special has a birthday...
+
+        And obviously, an ordinary birthday wish
+        wouldn't be enough for you.
+
+        I've planned a little surprise.
+        But first, you have to complete a few challenges!
     </p>
 
     <br>
 
     <button onclick="goToPage(2)">LET'S BEGIN</button>
 
-    <div class="small">Made with a little extra love.</div>
+    <div class="small">Made especially for you ♥</div>
 
 </section>
 
@@ -335,9 +336,11 @@ button:disabled {
 
     <div class="card">
 
-        <h2 id="question">Let's see how smart you are!</h2>
+        <h2>Let's see how well you do!</h2>
 
         <p id="questionNumber">Question 1 of 3</p>
+
+        <h2 id="question"></h2>
 
         <div id="answers"></div>
 
@@ -354,12 +357,13 @@ button:disabled {
 
     <div class="progress">CHALLENGE 2 OF 3</div>
 
-    <h1>Choose Your Gift!</h1>
+    <h1>Shanaya, Choose Your Gift!</h1>
 
     <p>
-        Three gifts are waiting for you.
-        Only one has your special surprise.
-        Pick carefully!
+        Three mystery gifts are waiting for you.
+
+        One of them is hiding something special.
+        Choose your favourite!
     </p>
 
     <div class="gift-row">
@@ -384,7 +388,7 @@ button:disabled {
 
     </div>
 
-    <p id="giftFeedback">Tap any gift box to select it.</p>
+    <p id="giftFeedback">Your intuition will guide you!</p>
 
     <button id="giftNext" onclick="goToPage(4)" disabled>
         UNLOCK MY GIFT
@@ -397,11 +401,14 @@ button:disabled {
 
 <section class="page" id="page4">
 
-    <div class="progress">FINAL CHALLENGE</div>
+    <div class="progress">ONE LAST LITTLE CHALLENGE</div>
 
-    <h1>Your Surprise Is Here!</h1>
+    <h1>It's Almost Time, Shanaya!</h1>
 
-    <p>Tap the gift box below to open it.</p>
+    <p>
+        Your surprise is right in front of you.
+        Go ahead, open it!
+    </p>
 
     <div class="gift-big" id="bigGift" onclick="openGift()">
 
@@ -411,12 +418,18 @@ button:disabled {
 
     </div>
 
-    <p id="giftInstruction">Come on, open it!</p>
+    <p id="giftInstruction">Tap the gift box!</p>
 
     <div id="giftMessage">
-        You did it! Your real surprise is waiting...
+
+        You did it, Shanaya!
+
         <br><br>
-        <button onclick="goToPage(5)">SEE MY SURPRISE</button>
+
+        <button onclick="goToPage(5)">
+            REVEAL YOUR SURPRISE
+        </button>
+
     </div>
 
 </section>
@@ -430,35 +443,56 @@ button:disabled {
 
         <div style="font-size:60px;">♥</div>
 
-        <h1>Happy Birthday!</h1>
+        <h1>Happy Birthday, Shanaya!</h1>
 
         <p>
-            Today is your day, and I hope it is as beautiful
-            and special as you are.
+            First of all, I hope you have the most
+            beautiful birthday and an even more
+            beautiful year ahead.
+        </p>
+
+        <div class="compliment">
+            And by the way...
+
+            <br><br>
+
+            Your eyes are genuinely beautiful.
+            There's something about them that's
+            hard to explain.
+
+            <br><br>
+
+            Your smile has its own charm,
+            and your personality makes you
+            even more special.
+
+            <br><br>
+
+            Never stop smiling.
+            It really suits you!
+        </div>
+
+        <p>
+            I hope life gives you a thousand reasons
+            to smile, endless happiness,
+            unforgettable memories and everything
+            your heart wishes for.
         </p>
 
         <p>
-            May your life be filled with endless happiness,
-            beautiful memories, laughter and countless reasons
-            to smile.
-        </p>
-
-        <p>
-            Never stop shining, never stop being yourself,
-            and never forget how special you are.
-        </p>
-
-        <p>
-            Wishing you all the love and happiness in the world!
+            Keep being the wonderful person you are.
+            The world needs more people like you.
         </p>
 
         <div class="signature">
-            With lots of love ♥
+            Lots of love for you ♥
         </div>
 
     </div>
 
-    <button onclick="celebrate()">ONE LAST SURPRISE</button>
+    <button onclick="celebrate()">
+        ONE LAST SURPRISE
+    </button>
 
     <div class="small" id="lastMessage"></div>
 
@@ -489,25 +523,40 @@ function goToPage(number) {
 // QUIZ GAME
 
 const questions = [
+
     {
         question: "What makes a birthday special?",
-        answers: ["Cake and gifts", "Happiness and memories", "A holiday"],
+        answers: [
+            "Cake and gifts",
+            "Happiness and beautiful memories",
+            "A holiday"
+        ],
         correct: 1
     },
+
     {
-        question: "What should you always have?",
-        answers: ["A reason to smile", "A lot of homework", "No free time"],
+        question: "What's one thing you should never lose?",
+        answers: [
+            "Your smile",
+            "Your phone",
+            "Your homework"
+        ],
         correct: 0
     },
+
     {
-        question: "Are you ready for your surprise?",
-        answers: ["Absolutely!", "Maybe...", "Not at all"],
+        question: "Who deserves all the happiness in the world?",
+        answers: [
+            "Shanaya, obviously!",
+            "Someone else",
+            "I don't know"
+        ],
         correct: 0
     }
+
 ];
 
 let currentQuestion = 0;
-let quizScore = 0;
 let answered = false;
 
 function loadQuestion() {
@@ -539,6 +588,7 @@ function loadQuestion() {
         answerBox.appendChild(btn);
 
     });
+
 }
 
 function checkAnswer(index) {
@@ -550,12 +600,15 @@ function checkAnswer(index) {
     const correct = questions[currentQuestion].correct;
 
     if(index === correct) {
-        quizScore++;
+
         document.getElementById("quizFeedback").innerText =
-            "Correct! You are doing great!";
+            "Correct! You are amazing, Shanaya!";
+
     } else {
+
         document.getElementById("quizFeedback").innerText =
-            "Nice try! Let's keep going!";
+            "Nice try! You still get full marks for being you!";
+
     }
 
     setTimeout(() => {
@@ -563,19 +616,23 @@ function checkAnswer(index) {
         currentQuestion++;
 
         if(currentQuestion < questions.length) {
+
             loadQuestion();
+
         } else {
+
             goToPage(3);
+
         }
 
-    }, 1100);
+    },1300);
 
 }
 
 loadQuestion();
 
 
-// GIFT SELECTION GAME
+// GIFT SELECTION
 
 let selectedGift = 0;
 
@@ -590,14 +647,14 @@ function selectGift(element,number) {
     selectedGift = number;
 
     document.getElementById("giftFeedback").innerText =
-        "Great choice! Your gift is waiting.";
+        "Good choice, Shanaya! I hope you like what's coming.";
 
     document.getElementById("giftNext").disabled = false;
 
 }
 
 
-// OPEN GIFT ANIMATION
+// OPEN THE GIFT
 
 let giftOpened = false;
 
@@ -610,7 +667,7 @@ function openGift() {
     document.getElementById("bigGift").classList.add("open");
 
     document.getElementById("giftInstruction").innerText =
-        "Your surprise has been unlocked!";
+        "A little happiness is on its way!";
 
     setTimeout(() => {
 
@@ -618,14 +675,20 @@ function openGift() {
 
         createConfetti();
 
-    }, 900);
+    },900);
 
 }
 
 
 // FLOATING HEARTS
 
+let heartsStarted = false;
+
 function startHearts() {
+
+    if(heartsStarted) return;
+
+    heartsStarted = true;
 
     setInterval(() => {
 
@@ -636,7 +699,9 @@ function startHearts() {
 
         heart.style.left = Math.random() * 100 + "vw";
         heart.style.color = "white";
-        heart.style.fontSize = (15 + Math.random() * 25) + "px";
+
+        heart.style.fontSize =
+            (15 + Math.random() * 25) + "px";
 
         document.body.appendChild(heart);
 
@@ -651,7 +716,13 @@ function startHearts() {
 
 function createConfetti() {
 
-    const colors = ["#ffffff","#ffe066","#ff4d88","#cdb4ff","#a8e6cf"];
+    const colors = [
+        "#ffffff",
+        "#ffe066",
+        "#ff4d88",
+        "#cdb4ff",
+        "#a8e6cf"
+    ];
 
     for(let i=0;i<100;i++) {
 
@@ -664,7 +735,8 @@ function createConfetti() {
         piece.style.background =
             colors[Math.floor(Math.random() * colors.length)];
 
-        piece.style.animationDelay = Math.random() * 2 + "s";
+        piece.style.animationDelay =
+            Math.random() * 2 + "s";
 
         document.body.appendChild(piece);
 
@@ -675,14 +747,14 @@ function createConfetti() {
 }
 
 
-// LAST SURPRISE
+// FINAL SURPRISE
 
 function celebrate() {
 
     createConfetti();
 
     document.getElementById("lastMessage").innerText =
-        "And one more thing... you deserve the happiest life!";
+        "Shanaya, never forget how special you are. Keep smiling ♥";
 
 }
 
